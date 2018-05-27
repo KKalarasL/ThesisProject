@@ -20,3 +20,7 @@
 
 - 4TH STEP - (Mobile App Development)
 9) ????????			(Mobile Portal)
+
+- EXTRA TOOLS -
+Github Desktop		(Github Files Control)
+MAMP				(Local Server)
