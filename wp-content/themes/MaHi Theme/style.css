@@ -1,7 +1,7 @@
 /*
 	Theme Name: Mythology & History (MaHi)
 	Author: KKalarasL
-	Version: 0.2
+	Version: 0.1
 */
 
 /* 3rd party packages */
@@ -748,7 +748,7 @@ p, li {
   margin-bottom: 0;
 }
 
-.school-logo-text {
+.mahi-logo-text {
   position: relative;
   z-index: 20;
   margin: 0;
@@ -756,20 +756,20 @@ p, li {
   font-weight: 100;
 }
 
-.school-logo-text strong {
+.mahi-logo-text strong {
   font-weight: 400;
 }
 
-.school-logo-text a {
+.mahi-logo-text a {
   color: #FFF;
   text-decoration: none;
 }
 
-.school-logo-text--alt-color a {
+.mahi-logo-text--alt-color a {
   color: #666;
 }
 
-.school-logo-text--alt-color a:hover {
+.mahi-logo-text--alt-color a:hover {
   color: #0D3B66;
   text-decoration: underline;
 }
