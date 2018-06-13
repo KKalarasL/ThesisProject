@@ -5,7 +5,7 @@
       <div class="group">
 
         <div class="site-footer__col-one">
-          <h1 class="mahi-logo-text mahi-logo-text--alt-color"><a href="#"><strong>Mythology & History</strong> (Mahi)</a></h1>
+          <h1 class="mahi-logo-text mahi-logo-text--alt-color"><a href="<?php echo site_url() ?>"><strong>Mythology & History</strong> (Mahi)</a></h1>
           <p><a class="site-footer__link" href="#">555.555.5555</a></p>
         </div>
 
@@ -14,13 +14,13 @@
             <h3 class="headline headline--small">Explore</h3>
             <nav class="nav-list">
               <ul>
-                <li><a href="#">Home</a></li>
-	            <li><a href="#">News</a></li>
-	            <li><a href="#">Mythology</a></li>
-	            <li><a href="#">History</a></li>
-	            <li><a href="#">Cardgame</a></li>
-	            <li><a href="#">Forum</a></li>
-	            <li><a href="#">Contact</a></li>
+                <li><a href="<?php echo site_url() ?>">Home</a></li>
+	              <li><a href="<?php echo site_url('/news') ?>">News</a></li>
+	              <li><a href="<?php echo site_url('/mythology') ?>">Mythology</a></li>
+	              <li><a href="<?php echo site_url('/history') ?>">History</a></li>
+	              <li><a href="<?php echo site_url('/cardgame') ?>">Cardgame</a></li>
+	              <li><a href="<?php echo site_url('/forum') ?>">Forum</a></li>
+	              <li><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -29,9 +29,9 @@
             <h3 class="headline headline--small">Learn</h3>
             <nav class="nav-list">
               <ul>
-                <li><a href="#">Legal</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a href="<?php echo site_url('/legal') ?>">Legal</a></li>
+                <li><a href="<?php echo site_url('/privacy') ?>">Privacy</a></li>
+                <li><a href="#">Test</a></li>
               </ul>
             </nav>
           </div>

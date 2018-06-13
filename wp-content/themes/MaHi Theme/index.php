@@ -7,6 +7,8 @@
       <h2 class="headline headline--medium">Mythology & History</h2>
       <h3 class="headline headline--small">Online Database</h3>
       <a href="#" class="btn btn--large btn--blue">Start Here</a>
+      <br>
+      <br>
     </div>
   </div>
 
