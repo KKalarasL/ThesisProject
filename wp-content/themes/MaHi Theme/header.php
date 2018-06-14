@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 	<head>
-		<title></title>
-		<?php wp_head(); ?>
+		<meta charset="<?php bloginfo('charset'); ?>">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<?php wp_head(); ?>
 	</head>
-	<body>
+	<body <?php body_class(); ?>>
 		<header class="site-header">
 	    <div class="container">
 	      <h1 class="mahi-logo-text float-left"><a href="<?php echo site_url() ?>"><strong>MaHi</strong></a></h1>
@@ -12,7 +13,12 @@
 	      <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
 	      <div class="site-header__menu group">
 	        <nav class="main-navigation">
-	          <ul>
+	        	<?php
+	        		wp_nav_menu(array(
+						'theme_location' => 'headerMenuLocation'
+	        		));
+	        	?>
+	          <!-- <ul>
 	            <li><a href="<?php echo site_url() ?>">Home</a></li>
 	            <li><a href="<?php echo site_url('/news') ?>">News</a></li>
 	            <li><a href="<?php echo site_url('/mythology') ?>">Mythology</a></li>
@@ -20,7 +26,7 @@
 	            <li><a href="<?php echo site_url('/cardgame') ?>">Cardgame</a></li>
 	            <li><a href="<?php echo site_url('/forum') ?>">Forum</a></li>
 	            <li><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
-	          </ul>
+	          </ul> -->
 	        </nav>
 	        <div class="site-header__util">
 	          <a href="<?php echo site_url('/login') ?>" class="btn btn--small btn--orange float-left push-right">Login</a>

@@ -1,4 +1,4 @@
-<!-- Header Content -->
+<!-- Header Content --> <!-- -------------------------------------------------------------------- -->
 
 <body>
 	<header class="site-header">
@@ -27,7 +27,7 @@
 	</div>
 	</header>
 
-<!-- Footer Content -->
+<!-- Footer Content --> <!-- -------------------------------------------------------------------- -->
 
 <footer class="site-footer">
 
@@ -85,15 +85,15 @@
     </div>
 </footer>
 
-<!-- Font Awesome Link -->
+<!-- Font Awesome Link --> <!-- -------------------------------------------------------------------- -->
 
 //maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
 
-<!-- Custom Google Fonts -->
+<!-- Custom Google Fonts --> <!-- -------------------------------------------------------------------- -->
 
 //fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i
 
-<!-- Header Banner -->
+<!-- Header Banner --> <!-- -------------------------------------------------------------------- -->
 
   <div class="page-banner">
   <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/homepagebanner.jpg') ?>;"></div>
@@ -105,7 +105,7 @@
     </div>
   </div>
 
-<!-- Hero Slider Example-->
+<!-- Hero Slider Example--> <!-- -------------------------------------------------------------------- -->
 
 <!-- in functions.php -->
 
@@ -143,7 +143,7 @@
   </div>
 </div>
 
-<!-- Page Template -->
+<!-- Page Template --> <!-- -------------------------------------------------------------------- -->
 
 <div class="page-banner">
   <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/map.jpg') ?>);"></div>
@@ -176,3 +176,78 @@
   </div>
 
 </div>
+
+<!-- News-Blog --> <!-- -------------------------------------------------------------------- -->
+
+<?php
+get_header(); ?>
+
+<div class="page-banner">
+    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/map.jpg') ?>);"></div>
+    <div class="page-banner__content container container--narrow">
+      <h1 class="page-banner__title">Welcome to our News</h1>
+      <div class="page-banner__intro">
+        <p>Keep up with our latest news.</p>
+      </div>
+    </div>  
+</div>
+
+<div class="container container--narrow page-section">
+  <?php
+    while(have_posts()) {
+      the_post(); ?>
+      <div class="post-item">
+        <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+        <div class="metabox">
+          <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time('d/m/Y'); ?> in <?php echo get_the_category_list(', '); ?></p>
+        </div>
+
+        <div class="generic-content">
+          <?php the_excerpt(); ?>
+          <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo</a></p>
+        </div>
+
+      </div>
+    <?php }
+    echo paginate_links();
+?>
+</div>
+
+<?php get_footer();
+
+?>
+
+<!-- Single-Post --> <!-- -------------------------------------------------------------------- -->
+
+<?php
+  
+  get_header();
+
+  while(have_posts()) {
+    the_post(); ?>
+
+    <div class="page-banner">
+    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/map.jpg') ?>);"></div>
+    <div class="page-banner__content container container--narrow">
+      <h1 class="page-banner__title"><?php the_title(); ?></h1>
+      <div class="page-banner__intro">
+        <p>TODO Subheader</p>
+      </div>
+    </div>  
+  </div>
+
+  <div class="container container--narrow page-section">
+    <div class="metabox metabox--position-up metabox--with-home-link">
+        <p><a class="metabox__blog-home-link" href="<?php echo site_url('/news') ?>"><i class="fa fa-home" aria-hidden="true"></i> News Home</a> <span class="metabox__main">Posted by <?php the_author_posts_link(); ?> on <?php the_time('d/m/Y'); ?> in <?php echo get_the_category_list(', '); ?></span></p>
+    </div>
+
+  <div class="generic-content"><?php the_content(); ?></div>
+
+  </div>
+    
+  <?php }
+
+  get_footer();
+
+?>
