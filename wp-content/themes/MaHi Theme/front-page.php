@@ -22,6 +22,8 @@
       </div>
     </div>
 
+    <hr width="1" size="500">
+
     <div class="full-width-split__two" style="background-image: linear-gradient(#FFF, #ECECEC);">
       <div class="full-width-split__inner">
         <div><img src="<?php echo get_theme_file_uri('/images/Mythology.jpg') ?>"></div>
@@ -66,6 +68,7 @@
         </div>
       </div>
     </div>
+    <hr width="1" size="500">
     <div class="full-width-split__two" style="background-image: linear-gradient(#FFF, #ECECEC);">
       <div class="full-width-split__inner">
         <div class="tcg-img"><img src="<?php echo get_theme_file_uri('/images/thumpb.jpg') ?>"></div>
@@ -76,6 +79,7 @@
         </div>
       </div>
     </div>
+    <hr width="1" size="500">
     <div class="full-width-split__three" style="background-image: linear-gradient(#FFF, #ECECEC);">
       <div class="full-width-split__inner">
         <div class="tcg-img"><img src="<?php echo get_theme_file_uri('/images/thumpc.jpg') ?>"></div>
