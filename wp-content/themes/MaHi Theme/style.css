@@ -34,6 +34,7 @@ html {
 
 body {
   margin: 0;
+  background-image: linear-gradient(#FFF, #ECECEC);
 }
 
 /**
@@ -607,8 +608,6 @@ body {
 }
 
 img {
-  width: 100%;
-  height: 100%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -2124,7 +2123,7 @@ body.admin-bar .search-overlay {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #FAF0CA;
+  background-color: #ffffff;
   padding: 1.6rem 16px;
 }
 
@@ -2146,7 +2145,7 @@ body.admin-bar .search-overlay {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #FAF0CA;
+  background-color: #ffffff;
   padding: 1.6rem 16px;
 }
 
@@ -2161,6 +2160,28 @@ body.admin-bar .search-overlay {
 
   .full-width-split__inner {
     width: auto;
+  }
+}
+
+.full-width-split__three {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #ffffff;
+  padding: 1.6rem 16px;
+}
+
+@media (min-width: 960px) {
+
+  .full-width-split__three {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+
+  .full-width-split__three .full-width-split__inner {
+    float: right;
   }
 }
 
@@ -2371,20 +2392,9 @@ margin: 20px 0;
   margin-bottom: 0;
 }
 
-.about-us-image {
-  width: auto;
-  height: auto;
-  position: relative;
-  background-image: url('/images/about.jpg');
-}
-
-.about-us-content {
-  position: absolute;
-  top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: center;
-  color: black;
-  text-shadow: 1px #000000;
-  z-index: 2;
+.tcg-img{
+  align-items: center;
+  padding: 0px 80px;
+  width: 70%;
+  height: 70%;
 }
