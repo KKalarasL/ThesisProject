@@ -18,7 +18,7 @@
 
     <div class="full-width-split__one" style="background-image: linear-gradient(#FFF, #ECECEC);">
       <div class="full-width-split__inner">
-        <div><img src="<?php echo get_theme_file_uri('/images/History.jpg') ?>"></div>
+        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/History.jpg') ?>"></div>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
 
     <div class="full-width-split__two" style="background-image: linear-gradient(#FFF, #ECECEC);">
       <div class="full-width-split__inner">
-        <div><img src="<?php echo get_theme_file_uri('/images/Mythology.jpg') ?>"></div>
+        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/Mythology.jpg') ?>"></div>
 	    </div>
 	  </div>
 
@@ -40,7 +40,7 @@
       <div class="full-width-split__inner">
         <div class="tcg-desc">
           <h1 style="text-align: center;">~ About Us ~</h1><hr>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           <hr><br>
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">Contact Us</a></p></div>
       </div>
@@ -48,7 +48,7 @@
 
     <div class="full-width-split__two" style="background-color: #4C638B;">
       <div class="full-width-split__inner">
-          <div class="tcg-img"><img src="<?php echo get_theme_file_uri('/images/about.jpg') ?>"></div>
+          <div class="tcg-img-ab"><img src="<?php echo get_theme_file_uri('/images/about.jpg') ?>"></div>
       </div>
     </div>
 
@@ -60,9 +60,9 @@
   <div class="full-width-split group">
     <div class="full-width-split__one" style="background-image: linear-gradient(#FFF, #ECECEC);">
       <div class="full-width-split__inner">
-        <div class="tcg-img"><img src="<?php echo get_theme_file_uri('/images/thumpa.jpg') ?>"></div>
+        <div class="tcg-img-grid"><img src="<?php echo get_theme_file_uri('/images/thumpa.jpg') ?>"></div>
         <div class=tcg-desc><h2 style="text-align: center;">Alexander</h1><hr>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           <hr><br>
           <p class="t-center no-margin"><a href="#" class="btn btn--blue">Read More...</a></p>
         </div>
@@ -71,9 +71,9 @@
     <hr width="1" size="500">
     <div class="full-width-split__two" style="background-image: linear-gradient(#FFF, #ECECEC);">
       <div class="full-width-split__inner">
-        <div class="tcg-img"><img src="<?php echo get_theme_file_uri('/images/thumpb.jpg') ?>"></div>
+        <div class="tcg-img-grid"><img src="<?php echo get_theme_file_uri('/images/thumpb.jpg') ?>"></div>
         <div class=tcg-desc><h2 style="text-align: center;">Zeus</h1><hr>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           <hr><br>
           <p class="t-center no-margin"><a href="#" class="btn btn--blue">Read More...</a></p>
         </div>
@@ -82,9 +82,9 @@
     <hr width="1" size="500">
     <div class="full-width-split__three" style="background-image: linear-gradient(#FFF, #ECECEC);">
       <div class="full-width-split__inner">
-        <div class="tcg-img"><img src="<?php echo get_theme_file_uri('/images/thumpc.jpg') ?>"></div>
+        <div class="tcg-img-grid"><img src="<?php echo get_theme_file_uri('/images/thumpc.jpg') ?>"></div>
         <div class=tcg-desc><h2 style="text-align: center;">Colosseum</h1><hr>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           <hr><br>
           <p class="t-center no-margin"><a href="#" class="btn btn--blue">Read More...</a></p>
         </div>
@@ -106,7 +106,7 @@
       <div class="full-width-split__inner">
         <div class="tcg-desc">
           <h2 style="text-align: center;">~ TCG Game ~</h2><hr>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           <hr><br>
           <p class="t-center no-margin"><a href="#" class="btn btn--blue">Play Now</a></p>
         </div>
@@ -139,7 +139,7 @@
 	  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/forum.jpg') ?>);">
 	    <div class="hero-slider__interior container">
 	      <div class="hero-slider__overlay">
-	        <h2 class="headline headline--medium t-center">Hello World</h2>
+	        <h2 class="headline headline--medium t-center">Forum</h2>
 	        <p class="t-center">Our forum threads are open for discussion.</p>
 	        <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
 	      </div>
