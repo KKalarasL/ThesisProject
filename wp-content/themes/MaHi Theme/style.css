@@ -34,7 +34,7 @@ html {
 
 body {
   margin: 0;
-  background-image: linear-gradient(#FFF, #ECECEC);
+  background-color: #FAF0CA;
 }
 
 /**
@@ -625,7 +625,7 @@ p, ul, ol {
 }
 
 p, li {
-  line-height: 1.65;
+  line-height: 1.40;
 }
 
 .container {
@@ -767,7 +767,7 @@ p, li {
 }
 
 .mahi-logo-text--alt-color a {
-  color: #666;
+  color: #870000;
 }
 
 .mahi-logo-text--alt-color a:hover {
@@ -885,7 +885,7 @@ p, li {
 
 .nav-list a {
   font-size: .9rem;
-  color: #999;
+  color: #4C638B;
   text-decoration: none;
 }
 
@@ -1482,7 +1482,7 @@ body.login {
 
 .site-footer {
   padding: 2rem 0 3.5rem 0;
-  background-image: linear-gradient(#FFF, #ECECEC);
+  background-color: ##FAF0CA;
 }
 
 .site-footer p {
@@ -1490,12 +1490,12 @@ body.login {
 }
 
 .site-footer .headline {
-  color: #666;
+  color: #870000;
   margin-bottom: .33rem;
 }
 
 .site-footer__link {
-  color: #999;
+  color: #4C638B;
   text-decoration: none;
 }
 

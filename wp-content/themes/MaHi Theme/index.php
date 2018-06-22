@@ -23,6 +23,7 @@ get_header(); ?>
         </div>
 
         <div class="generic-content">
+          <p style="float: left, width: 100, height: 100"><img src="<?php echo get_theme_file_uri('/images/thumpa.jpg'); ?>"></p>
           <?php the_excerpt(); ?>
           <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo</a></p>
         </div>

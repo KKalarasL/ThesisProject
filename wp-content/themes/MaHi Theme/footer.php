@@ -5,7 +5,7 @@
       <div class="group">
 
         <div class="site-footer__col-one">
-          <h1 class="mahi-logo-text mahi-logo-text--alt-color"><a href="<?php echo site_url() ?>"><strong>Mythology & History</strong> (Mahi)</a></h1>
+          <h1 class="mahi-logo-text mahi-logo-text--alt-color"><a href="<?php echo site_url() ?>"><strong>Mythology & History</strong></a></h1>
           <p><a class="site-footer__link" href="#">555.555.5555</a></p>
         </div>
 
