@@ -13,7 +13,7 @@
   </div>
 
   <h1 style="text-align: center; color: #870000; text-shadow: 1px 1px black; font-size: 40px;">- Select Category -</h1>
-  <hr>
+  <hr style="background-color: black; height: 1px;"/>
   <div class="full-width-split group">
 
     <div class="full-width-split__one" style="background-color: #FAF0CA;">
@@ -21,8 +21,6 @@
         <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/History.jpg') ?>"></div>
       </div>
     </div>
-
-    <hr width="1" size="500">
 
     <div class="full-width-split__two" style="background-color: #FAF0CA;">
       <div class="full-width-split__inner">
@@ -55,7 +53,7 @@
    <!-- ------------------- -->
 
   <h1 style="text-align: center; color: #004887; text-shadow: 1px 1px black; font-size: 40px;">- Latest News -</h1>
-  <hr>
+  <hr style="background-color: black; height: 1px;"/>
   <div class="full-width-split group">
     <div class="full-width-split__one" style="background-color: #FAF0CA;">
       <div class="full-width-split__inner">
@@ -92,6 +90,7 @@
   </div>
 
   <!-- TCG Game -->
+  <hr style="background-color: black; height: 1px;"/>
    <div class="full-width-split group">
 
     <div class="full-width-split__one" style="background-color: #870000;">
@@ -114,7 +113,7 @@
   </div>
   <!-- ------------------- -->
   
-    <hr>
+    <hr style="background-color: black; height: 1px;"/>
 	  <div class="hero-slider">
 	  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/alexander.jpg') ?>);">
 	    <div class="hero-slider__interior container">
@@ -144,7 +143,7 @@
 	    </div>
 	  </div>
 	</div>
-  <hr>
+  <hr style="background-color: black; height: 1px;"/>
 
   <?php get_footer();
 
