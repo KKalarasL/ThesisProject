@@ -11,29 +11,32 @@ get_header(); ?>
     </div>  
 </div>
 
-<div class="container container--narrow page-section">
-  <?php
-    while(have_posts()) {
-      the_post(); ?>
-      <div class="post-item">
-        <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+<div class="paper">
+  <div class="container container--narrow page-section">
+    <?php
+      while(have_posts()) {
+        the_post(); ?>
+        <div class="post-item">
+          <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-        <div class="metabox">
-          <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time('d/m/Y'); ?> in <?php echo get_the_category_list(', '); ?></p>
+          <div class="metabox">
+            <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time('d/m/Y'); ?> in <?php echo get_the_category_list(', '); ?></p>
+          </div>
+
+          <div class="generic-content">
+            <div class="img-thumb"><img src="<?php echo get_theme_file_uri('/images/thumpa.jpg'); ?>"></div>
+            <br>
+            <?php the_excerpt(); ?>
+            <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo</a></p>
+          </div>
+            <hr style="background-color: black; height: 1px;"/>
         </div>
-
-        <div class="generic-content">
-          <p style="float: left, width: 100, height: 100"><img src="<?php echo get_theme_file_uri('/images/thumpa.jpg'); ?>"></p>
-          <?php the_excerpt(); ?>
-          <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo</a></p>
-        </div>
-
-      </div>
-    <?php }
-    echo paginate_links();
-?>
+      <?php }
+      echo paginate_links();
+  ?>
+  </div>
 </div>
-
+<hr style="background-color: black; height: 1px;"/>
 <?php get_footer();
 
 ?>

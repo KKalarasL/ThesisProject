@@ -90,7 +90,6 @@
   </div>
 
   <!-- TCG Game -->
-  <hr style="background-color: black; height: 1px;"/>
    <div class="full-width-split group">
 
     <div class="full-width-split__one" style="background-color: #870000;">

@@ -26,13 +26,13 @@ get_header(); ?>
           <?php the_excerpt(); ?>
           <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo</a></p>
         </div>
-
+          <hr style="background-color: black; height: 1px;"/>
       </div>
     <?php }
     echo paginate_links();
 ?>
 </div>
-
+<hr style="background-color: black; height: 1px;"/>
 <?php get_footer();
 
 ?>
