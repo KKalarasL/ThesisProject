@@ -26,8 +26,7 @@
 
   </div>
 </div>
-
-  <hr style="background-color: black; height: 1px;"/>    
+   
   <?php }
 
   get_footer();

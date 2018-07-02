@@ -17,6 +17,7 @@ get_header(); ?>
       while(have_posts()) {
         the_post(); ?>
         <div class="post-item">
+          <br>
           <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
           <div class="metabox">
@@ -27,16 +28,17 @@ get_header(); ?>
             <div class="img-thumb"><img src="<?php echo get_theme_file_uri('/images/thumpa.jpg'); ?>"></div>
             <br>
             <?php the_excerpt(); ?>
-            <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo</a></p>
+            <p style="float: right;"><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo</a></p>
           </div>
-            <hr style="background-color: black; height: 1px;"/>
         </div>
+        <br>
+        <hr style="background-color: black; height: 1px; margin-top: 30px;"/>
       <?php }
       echo paginate_links();
   ?>
   </div>
 </div>
-<hr style="background-color: black; height: 1px;"/>
+
 <?php get_footer();
 
 ?>

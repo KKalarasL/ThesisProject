@@ -12,7 +12,6 @@
     </div>
   </div>
 
-  <h1 style="text-align: center; color: #870000; text-shadow: 1px 1px black; font-size: 40px;">- Select Category -</h1>
   <hr style="background-color: black; height: 1px;"/>
   <div class="full-width-split group">
 
@@ -52,8 +51,6 @@
   </div>
    <!-- ------------------- -->
 
-  <h1 style="text-align: center; color: #004887; text-shadow: 1px 1px black; font-size: 40px;">- Latest News -</h1>
-  <hr style="background-color: black; height: 1px;"/>
   <div class="full-width-split group">
     <div class="full-width-split__one" style="background-color: #FAF0CA;">
       <div class="full-width-split__inner">
@@ -142,7 +139,6 @@
 	    </div>
 	  </div>
 	</div>
-  <hr style="background-color: black; height: 1px;"/>
 
   <?php get_footer();
 
