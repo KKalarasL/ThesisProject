@@ -12,7 +12,6 @@
     </div>
   </div>
 
-  <hr style="background-color: black; height: 1px;"/>
   <div class="full-width-split group">
 
     <div class="full-width-split__one" style="background-color: #FAF0CA;">
@@ -141,5 +140,7 @@
 	</div>
 
   <?php get_footer();
+
+  get_footer();
 
 ?>
