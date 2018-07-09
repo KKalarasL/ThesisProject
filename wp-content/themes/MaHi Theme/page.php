@@ -10,7 +10,7 @@
     <div class="page-banner__content container container--narrow">
       <h1 class="page-banner__title"><?php the_title(); ?></h1>
       <div class="page-banner__intro">
-        <p>TODO Subheader</p>
+        <p><?php echo get_post_meta($post->ID, 'Subheader', true); ?></p>
       </div>
     </div>  
   </div>

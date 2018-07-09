@@ -15,8 +15,9 @@ function mahi_features() {
 	register_nav_menu('footerMenuLocationTwo', 'Footer Menu Location Two');
 	add_theme_support('title-tag');
 	add_theme_support('post-thumbnails');
-	add_image_size('FirstThumbnail', 480, 650, true);
-	add_Image_size('SecondThumbnail', 400, 260, true);
+	add_image_size('SmallThumbnail', 377, 242, true);
+	add_Image_size('DefaultSize', 1200, 800, true);
+	add_image_size('PageBanner', 1920, 796, true);
 }
 
 add_action('after_setup_theme', 'mahi_features');

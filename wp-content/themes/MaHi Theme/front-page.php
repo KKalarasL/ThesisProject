@@ -16,13 +16,13 @@
 
     <div class="full-width-split__one" style="background-color: #FAF0CA;">
       <div class="full-width-split__inner">
-        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/History.jpg') ?>"></div>
+        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/history.jpg') ?>"></div>
       </div>
     </div>
 
     <div class="full-width-split__two" style="background-color: #FAF0CA;">
       <div class="full-width-split__inner">
-        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/Mythology.jpg') ?>"></div>
+        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/mythology.jpg') ?>"></div>
 	    </div>
 	  </div>
 
@@ -43,7 +43,7 @@
 
     <div class="full-width-split__two" style="background-color: #4C638B;">
       <div class="full-width-split__inner">
-          <div class="tcg-img-ab"><img src="<?php echo get_theme_file_uri('/images/about.jpg') ?>"></div>
+          <div class="tcg-img-ab"><img src="<?php echo get_theme_file_uri('/images/contact.jpg') ?>"></div>
       </div>
     </div>
 
