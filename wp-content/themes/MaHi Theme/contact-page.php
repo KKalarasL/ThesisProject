@@ -58,7 +58,24 @@
     <?php } ?>
 
     <div class="generic-content">
-      <?php the_content(); ?>
+      <div>
+        <form action="/action_page.php">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name..">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address..">
+
+          <label for="sub">Subject</label>
+          <input type="text" id="sub" name="subject" placeholder="Your Subject..">
+
+          <label for="msg">Message</label>
+          <textarea          id="msg" name="message" placeholder="Type Your Message Here.."></textarea>
+        
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <!-- <?php the_content(); ?> -->
     </div>
 
   </div>
