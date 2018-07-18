@@ -1,4 +1,4 @@
-<?php /* Template Name: Cardgame-Page */ ?>
+<?php /* Template Name: Signup-Page */ ?>
 
 <?php 
 
@@ -58,37 +58,30 @@
     <?php } ?>
 
     <div class="generic-content">
-      <div style="text-align: center">
-        <?php the_content(); ?>
-      </div>
-      <br/>
-      <hr style="background-color: black; height: 1px;"/>
-        <div class="hero-slider">
-        <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/zeus.jpg') ?>);">
-          <div class="hero-slider__interior container">
-            <div class="hero-slider__overlay">
-              <h2 class="headline headline--medium t-center">Zeus</h2>
-              <p class="t-center">The Greek father of Gods.</p>
-              <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/forum.jpg') ?>);">
-          <div class="hero-slider__interior container">
-            <div class="hero-slider__overlay">
-              <h2 class="headline headline--medium t-center">Forum</h2>
-              <p class="t-center">Our forum threads are open for discussion.</p>
-              <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-            </div>
-          </div>
-        </div>
+      <div>
+        <form action="/action_page.php">
 
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Your First Name">
+
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Your Last Name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address">
+
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Your Username">
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Your Password">
+
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+
+          <input type="submit" value="Signup">
+        </form>
       </div>
-      <hr style="background-color: black; height: 1px;"/>
-        <div style="margin: 0 auto; width: 195px">
-          <br/>
-          <div class="btn btn--large btn--blue">Play Now</div>
-        </div>
     </div>
 
   </div>

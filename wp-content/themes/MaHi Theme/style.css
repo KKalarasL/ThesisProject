@@ -725,16 +725,22 @@ p, li {
 }
 
 .page-section {
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  background-color: #ffffff;
+}
+
+.page-section-contact {
+  padding-top: 1.3rem;
+  padding-bottom: 1.2rem;
   background-color: #ffffff;
 }
 
 @media (min-width: 530px) {
 
   .page-section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     background-color: #ffffff;
   }
 }
@@ -2477,6 +2483,13 @@ margin: 20px 0;
 }
 
 .paper {
+  width: 53%;
+  margin: 50px auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px 4px #000000;
+}
+
+.paper-contact {
   width: 50%;
   margin: 50px auto;
   background-color: #FFFFFF;
@@ -2484,6 +2497,16 @@ margin: 20px 0;
 }
 
 input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

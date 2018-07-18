@@ -17,8 +17,8 @@
     </div>  
   </div>
 
-<div class="paper">
-  <div class="container container--narrow page-section">
+<div class="paper-contact">
+  <div class="container container--narrow page-section-contact">
 
   	<?php
       $theParent = wp_get_post_parent_id(get_the_ID());
@@ -61,16 +61,16 @@
       <div>
         <form action="/action_page.php">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name..">
+          <input type="text" id="name" name="name" placeholder="Your Name">
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email Address..">
+          <input type="email" id="email" name="email" placeholder="Your Email Address">
 
           <label for="sub">Subject</label>
-          <input type="text" id="sub" name="subject" placeholder="Your Subject..">
+          <input type="text" id="sub" name="subject" placeholder="Your Subject">
 
           <label for="msg">Message</label>
-          <textarea          id="msg" name="message" placeholder="Type Your Message Here.."></textarea>
+          <textarea id="msg" name="message" placeholder="Type Your Message Here"></textarea>
         
           <input type="submit" value="Submit">
         </form>
