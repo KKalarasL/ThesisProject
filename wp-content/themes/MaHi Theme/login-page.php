@@ -62,12 +62,12 @@
         <form action="/action_page.php">
 
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Your Username">
+          <input class="textfield" type="text" id="username" name="username" placeholder="Your Username">
 
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Your Password">
+          <input class="passwordfield" type="password" id="password" name="password" placeholder="Your Password">
 
-          <input type="submit" value="Log In">
+          <input class="submitfield" type="submit" value="Log In">
         </form>
       </div>
     </div>

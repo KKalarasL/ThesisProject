@@ -62,24 +62,24 @@
         <form action="/action_page.php">
 
           <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" placeholder="Your First Name">
+          <input class="textfield" type="text" id="firstName" name="firstName" placeholder="Your First Name">
 
           <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" placeholder="Your Last Name">
+          <input class="textfield" type="text" id="lastName" name="lastName" placeholder="Your Last Name">
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email Address">
+          <input class="emailfield" type="email" id="email" name="email" placeholder="Your Email Address">
 
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Your Username">
+          <input class="textfield" type="text" id="username" name="username" placeholder="Your Username">
 
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Your Password">
+          <input class="passwordfield" type="password" id="password" name="password" placeholder="Your Password">
 
           <label for="confirmPassword">Confirm Password</label>
-          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+          <input class="passwordfield" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
 
-          <input type="submit" value="Signup">
+          <input class="submitfield" type="submit" value="Signup">
         </form>
       </div>
     </div>
