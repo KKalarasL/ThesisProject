@@ -9,7 +9,7 @@ class Search {
     this.searchOverlay = $(".search-overlay");
     this.searchField = $("#search-term");
     this.events();
-    this.isOverlayOpen = true;
+    this.isOverlayOpen = false;
     this.isSpinnerVisible = false;
     this.previousValue;
     this.typingTimer;
@@ -34,7 +34,7 @@ class Search {
           this.resultsDiv.html('<div class="spinner-loader"></div>');
           this.isSpinnerVisible = true;
         }
-        this.typingTimer = setTimeout(this.getResults.bind(this), 2000);
+        this.typingTimer = setTimeout(this.getResults.bind(this), 750);
       } else {
         this.resultsDiv.html('');
         this.isSpinnerVisible = false;
@@ -46,8 +46,21 @@ class Search {
   }
 
   getResults() {
-    this.resultsDiv.html("Imagine real search results here...");
-    this.isSpinnerVisible = false;
+    $.when(
+      $.getJSON(mahiData.root_url + '/wp-json/wp/v2/posts?search=' + this.searchField.val()),
+      $.getJSON(mahiData.root_url + '/wp-json/wp/v2/pages?search=' + this.searchField.val())
+      ).then((posts, pages) => {
+      var combinedResults = posts[0].concat(pages[0]);
+      this.resultsDiv.html(`
+        <h2 class="search-overlay__section-title">General Information</h2>
+        ${combinedResults.length ? '<ul class="link-list min-list">' : '<p>No general information matches that search.</p>'}
+          ${combinedResults.map(item => `<li><a href="${item.link}">${item.title.rendered}</a> ${item.type == 'post' ? `by ${item.authorName}` : ''}</li>`).join('')}
+        ${combinedResults.length ? '</ul>' : ''}
+      `);
+      this.isSpinnerVisible = false;
+    }, () => {
+      this.resultsDiv.html('<p>Unexpected error; please try again.</p>');
+    });
   }
 
   keyPressDispatcher(e) {
@@ -58,12 +71,13 @@ class Search {
     if (e.keyCode == 27 && this.isOverlayOpen) {
       this.closeOverlay();
     }
-
   }
 
   openOverlay() {
     this.searchOverlay.addClass("search-overlay--active");
     $("body").addClass("body-no-scroll");
+    this.searchField.val('');
+    setTimeout(() => this.searchField.focus(), 301);
     console.log("our open method just ran!");
     this.isOverlayOpen = true;
   }
@@ -74,6 +88,7 @@ class Search {
     console.log("our close method just ran!");
     this.isOverlayOpen = false;
   }
+
 }
 
 export default Search;

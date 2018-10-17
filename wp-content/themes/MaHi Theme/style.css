@@ -725,8 +725,7 @@ p, li {
 }
 
 .page-section {
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
+  padding: 2.5rem
   background-color: #ffffff;
 }
 
@@ -739,8 +738,7 @@ p, li {
 @media (min-width: 530px) {
 
   .page-section {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding: 2.5rem;
     background-color: #ffffff;
   }
 }
@@ -2483,7 +2481,7 @@ margin: 20px 0;
 }
 
 .paper {
-  width: 53%;
+  width: 56%;
   margin: 50px auto;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 4px 4px #000000;

@@ -77,8 +77,7 @@
     <div class="container">
       <div id="search-overlay__results"></div>
     </div>
-
-</div>
+ </div>
 
 <?php wp_footer(); ?>
 </body>
