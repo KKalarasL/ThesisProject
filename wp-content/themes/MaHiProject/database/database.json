@@ -1,0 +1,14 @@
+{
+	"mythology" : 
+	{
+		"greek" : [{"title": "", "id": "", "content": "", "image": "", "labels": [""]}],
+		"norse" : [{"title": "", "id": "", "content": "", "image": "", "labels": [""]}],
+		"egypt" : [{"title": "", "id": "", "content": "", "image": "", "labels": [""]}]
+	},
+	"history"	: 
+	{
+		"battles" : [{"title": "", "id": "", "content": "", "image": "", "labels": [""]}],
+		"persons" : [{"title": "", "id": "", "content": "", "image": "", "labels": [""]}],
+		"locates" : [{"title": "", "id": "", "content": "", "image": "", "labels": [""]}]
+	}
+}

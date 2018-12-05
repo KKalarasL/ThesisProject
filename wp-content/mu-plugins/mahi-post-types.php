@@ -1,35 +1,47 @@
 <?php
 
 function mahi_post_types() {
-
-  // Mythology Post Type
   register_post_type('mythology', array(
-    'show_in_rest' => true,
-    'supports' => array('title', 'editor', 'thumbnail'),
+    'supports' => array('title', 'editor', 'excerpt'),
+    'rewrite' => array('slug' => 'mythology'),
+    'has_archive' => true,
     'public' => true,
     'labels' => array(
       'name' => 'Mythology',
-      'add_new_item' => 'Add New Mythology',
-      'edit_item' => 'Edit Mythology',
-      'all_items' => 'All Mythology',
-      'singular_name' => 'Mythology'
+      'add_new_item' => 'Add New Data',
+      'edit_item' => 'Edit Data',
+      'all_items' => 'All Data',
+      'singular_name' => 'Data'
     ),
-    'menu_icon' => 'dashicons-welcome-learn-more'
+    'menu_icon' => 'dashicons-media-text'
   ));
-
-  // History Post Type
   register_post_type('history', array(
-    'show_in_rest' => true,
-    'supports' => array('title', 'editor', 'thumbnail'),
+    'supports' => array('title', 'editor', 'excerpt'),
+    'rewrite' => array('slug' => 'history'),
+    'has_archive' => true,
     'public' => true,
     'labels' => array(
       'name' => 'History',
-      'add_new_item' => 'Add New History',
-      'edit_item' => 'Edit History',
-      'all_items' => 'All History',
-      'singular_name' => 'History'
+      'add_new_item' => 'Add New Data',
+      'edit_item' => 'Edit Data',
+      'all_items' => 'All Data',
+      'singular_name' => 'Data'
     ),
-    'menu_icon' => 'dashicons-welcome-learn-more'
+    'menu_icon' => 'dashicons-media-spreadsheet'
+  ));
+  register_post_type('cardgame', array(
+    'supports' => array('title', 'editor', 'excerpt'),
+    'rewrite' => array('slug' => 'cardgame'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Cardgame',
+      'add_new_item' => 'Add New Data',
+      'edit_item' => 'Edit Data',
+      'all_items' => 'All Data',
+      'singular_name' => 'Data'
+    ),
+    'menu_icon' => 'dashicons-screenoptions'
   ));
 }
 
