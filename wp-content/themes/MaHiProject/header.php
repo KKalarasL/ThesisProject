@@ -33,7 +33,7 @@
 	            	</ul>
 	            </div>
 	            <div style="margin-left: 10px" class="dropdown">
-	            	<button class="dropbtn"><li <?php if (get_post_type() == 'carddb') echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url('/carddb') ?>">TCG <i class="fa fa-caret-down"></i></a></li></button>
+	            	<button class="dropbtn"><li <?php if (get_post_type() == 'carddb') echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url('/cardgame') ?>">TCG <i class="fa fa-caret-down"></i></a></li></button>
 	            		<ul class="dropdown-content">
 	            			<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'play') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/carddb/play') ?>">Play</a></li>
 	            			<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'library') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/carddb/library') ?>">Library</a></li>

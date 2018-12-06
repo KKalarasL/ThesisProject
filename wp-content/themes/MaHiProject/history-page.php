@@ -28,8 +28,6 @@
     	</div>
       <?php }
     ?>
-    
-
 
     <?php 
     $testArray = get_pages(array(

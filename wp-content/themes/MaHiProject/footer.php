@@ -18,7 +18,7 @@
                 <li><a href="<?php echo site_url() ?>">Home</a></li>
 	              <li><a href="<?php echo site_url('/mythology') ?>">Mythology</a></li>
 	              <li><a href="<?php echo site_url('/history') ?>">History</a></li>
-	              <li><a href="<?php echo site_url('/cardgame') ?>">Cardgame</a></li>
+	              <li><a href="<?php echo site_url('/cardgame') ?>">TCG</a></li>
 	              <li><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
               </ul>
             </nav>

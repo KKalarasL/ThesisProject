@@ -28,8 +28,6 @@
     	</div>
       <?php }
     ?>
-    
-
 
     <?php 
     $testArray = get_pages(array(
@@ -85,10 +83,10 @@
 
       </div>
       <hr style="background-color: black; height: 1px;"/>
-        <div style="margin: 0 auto; width: 195px">
+        <div style="margin: 0 auto; width: 195px; display: block;">
           <br/>
           <div class="btn btn--large btn--blue">Play Now</div>
-          <div class="btn btn--large btn--blue">Cards Library</div>
+          <div style="text-align: center; width: 127px;" class="btn btn--large btn--blue">Library</div>
         </div>
     </div>
 
