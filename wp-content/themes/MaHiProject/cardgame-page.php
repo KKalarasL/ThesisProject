@@ -88,6 +88,7 @@
         <div style="margin: 0 auto; width: 195px">
           <br/>
           <div class="btn btn--large btn--blue">Play Now</div>
+          <div class="btn btn--large btn--blue">Cards Library</div>
         </div>
     </div>
 

@@ -2586,9 +2586,9 @@ textarea {
     text-align: center;
 }
 
-/*.dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #f1f1f1;
-}*/
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
