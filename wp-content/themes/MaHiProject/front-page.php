@@ -33,9 +33,9 @@
 
     <div class="full-width-split__one" style="background-color: #4C638B; color: white;">
       <div class="full-width-split__inner">
-        <div class="tcg-desc">
+        <div class="tcg-desc-right">
           <h1 style="text-align: center; text-shadow: 2px 2px #000000;"><?php echo get_the_title(29); ?></h1><hr>
-          <p style="text-align: center;"><?php echo get_post_field('post_content', 29); ?></p>
+          <p style="text-align: center; width: 725px;"><?php echo get_post_field('post_content', 29); ?></p>
           <hr><br>
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">Contact Us</a></p></div>
       </div>
@@ -43,7 +43,7 @@
 
     <div class="full-width-split__two" style="background-color: #4C638B;">
       <div class="full-width-split__inner">
-          <div class="tcg-img-ab"><img src="<?php echo get_theme_file_uri('/images/contact.jpg') ?>"></div>
+          <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/contact.jpg') ?>"></div>
       </div>
     </div>
 
@@ -90,15 +90,15 @@
 
     <div class="full-width-split__one" style="background-color: #870000;">
       <div class="full-width-split__inner">
-        <div class="tcg-img"><img src="<?php echo get_theme_file_uri('/images/ranks.jpg') ?>"></div>
+        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/ranks.jpg') ?>"></div>
       </div>
     </div>
 
     <div class="full-width-split__two" style="background-color: #870000; color: white;">
       <div class="full-width-split__inner">
-        <div class="tcg-desc">
+        <div class="tcg-desc-left">
           <h2 style="text-align: center; text-shadow: 2px 2px #000000;"><?php echo get_the_title(15); ?></h2><hr>
-          <p style="text-align: center; "><?php echo get_post_field('post_content', 15); ?></p>
+          <p style="text-align: center; width: 725px; "><?php echo get_post_field('post_content', 15); ?></p>
           <hr><br>
           <p class="t-center no-margin"><a href="#" class="btn btn--blue">Play Now</a></p>
         </div>
