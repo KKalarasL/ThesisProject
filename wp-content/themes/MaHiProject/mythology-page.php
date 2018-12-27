@@ -17,8 +17,9 @@
     </div>
   </div>
 
-<div class="paper">
-  <div class="container container--narrow page-section">
+<div class="paper-contact">
+  <hr style="background-color: black; border: none"/>
+  <div class="container container--narrow page-section-contact">
 
   	<?php
       $theParent = wp_get_post_parent_id(get_the_ID());

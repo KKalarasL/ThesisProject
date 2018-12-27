@@ -12,6 +12,7 @@ get_header(); ?>
 </div>
 
 <div class="paper">
+  <hr style="background-color: black; border: none"/>
   <div class="container container--narrow page-section">
     <?php
       while(have_posts()) {

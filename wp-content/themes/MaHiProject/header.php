@@ -19,17 +19,17 @@
 	            <div style="margin-left: 10px" class="dropdown">
 	            	<button class="dropbtn"><li <?php if (get_post_type() == 'mythology') echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url('/mythology') ?>">Mythology <i class="fa fa-caret-down"></i></a></li></button>
 	            	<ul class="dropdown-content">
-	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'greece') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/greece') ?>">Greece</a></li>
-	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'egypt') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/egypt') ?>">Egypt</a></li>
-	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'norse') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/norse') ?>">Norse</a></li>
+	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'mythology') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/gods') ?>">Gods</a></li>
+	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'mythology') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/heroes') ?>">Heroes</a></li>
+	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'mythology') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/creatures') ?>">Creatures</a></li>
 	            	</ul>
 	            </div>
 	            <div style="margin-left: 10px" class="dropdown">
 	            	<button class="dropbtn"><li <?php if (get_post_type() == 'history') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/history') ?>">History <i class="fa fa-caret-down"></i></a></li></button>
 	            	<ul class="dropdown-content">
-	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'events') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/history/events') ?>">Events</a></li>
-	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'armies') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/history/armies') ?>">Armies</a></li>
-	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'persons') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/history/persons') ?>">Persons</a></li>
+	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'history') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/history/battles') ?>">Battles</a></li>
+	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'history') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/history/armies') ?>">Armies</a></li>
+	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'history') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/history/persons') ?>">Persons</a></li>
 	            	</ul>
 	            </div>
 	            <div style="margin-left: 10px" class="dropdown">

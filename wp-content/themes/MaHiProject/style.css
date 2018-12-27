@@ -635,10 +635,6 @@ p, li {
   position: relative;
 }
 
-.container--narrow {
-  max-width: 960px;
-}
-
 .section-break {
   border: none;
   border-top: 1px solid #DDD;
@@ -727,12 +723,21 @@ p, li {
 .page-section {
   padding: 2.5rem
   background-color: #ffffff;
+  border: 1px solid black;
 }
 
 .page-section-contact {
   padding-top: 1.3rem;
   padding-bottom: 1.2rem;
   background-color: #ffffff;
+  max-width: fit-content;
+}
+
+.page-section-contactpage {
+  padding-top: 1.3rem;
+  padding-bottom: 1.2rem;
+  background-color: #ffffff;
+  max-width: inherit;
 }
 
 @media (min-width: 530px) {
@@ -740,6 +745,7 @@ p, li {
   .page-section {
     padding: 2.5rem;
     background-color: #ffffff;
+    border: 1px solid black;
   }
 }
 
@@ -2408,13 +2414,63 @@ margin: 20px 0;
 }
 
 .sp-img {
-	width: 80%;
-	height: 80%;
-	margin-left: auto;
-  	margin-right: auto;
-  	border: 4px solid #49608C;
-  	padding: 4px 4px 0px 4px;
-  	box-shadow: 0px 4px 4px 4px #c4c4c4;
+  position: relative;
+  width: 80%;
+	height: auto;
+	margin: auto;
+	border: 4px solid #49608C;
+	box-shadow: 0px 4px 4px 4px #c4c4c4;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.sp-img:hover img{
+  transform: scale(1.1);
+  transition: all 2s;
+  opacity: .8;
+}
+
+.img-desc1 {
+  position: absolute;
+  color: #fbf2c6;
+  text-shadow: 3px 1px 1px black;
+  background-color: rgba(0, 0, 0, .65);
+  opacity: 0;
+  font-size: 70px;
+  transition: all 1s;
+  bottom: 0;
+  width: 100%;
+}
+
+.img-desc2 {
+  position: absolute;
+  color: #fbf2c6;
+  text-shadow: 3px 1px 1px black;
+  background-color: rgba(0, 0, 0, .65);
+  opacity: 0;
+  font-size: 70px;
+  transition: all 1s;
+  bottom: 0;
+  width: 100%;
+}
+
+.sp-img:hover .img-desc1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sp-img:hover .img-desc2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ss-img {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 4px solid #49608C;
+  padding: 4px 4px 0px 4px;
+  box-shadow: 0px 4px 4px 4px #c4c4c4;
 }
 
 .tcg-img {
@@ -2482,8 +2538,6 @@ margin: 20px 0;
 
 .paper {
   width: 100%;
-  background-color: #FFFFFF;
-  box-shadow: 0px 4px 4px 4px #000000;
 }
 
 .paper-contact {

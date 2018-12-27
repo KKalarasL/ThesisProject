@@ -16,13 +16,17 @@
 
     <div class="full-width-split__one" style="background-color: #FAF0CA;">
       <div class="full-width-split__inner">
-        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/history.jpg') ?>"></div>
+        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/history.jpg') ?>">
+          <div class="img-desc1">History</div>
+        </div>
       </div>
     </div>
 
     <div class="full-width-split__two" style="background-color: #FAF0CA;">
       <div class="full-width-split__inner">
-        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/mythology.jpg') ?>"></div>
+        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/mythology.jpg') ?>">
+          <div class="img-desc2">Mythology</div>
+        </div>
 	    </div>
 	  </div>
 
@@ -43,7 +47,7 @@
 
     <div class="full-width-split__two" style="background-color: #4C638B;">
       <div class="full-width-split__inner">
-          <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/contact.jpg') ?>"></div>
+          <div class="ss-img"><img src="<?php echo get_theme_file_uri('/images/contact.jpg') ?>"></div>
       </div>
     </div>
 
@@ -90,7 +94,7 @@
 
     <div class="full-width-split__one" style="background-color: #870000;">
       <div class="full-width-split__inner">
-        <div class="sp-img"><img src="<?php echo get_theme_file_uri('/images/ranks.jpg') ?>"></div>
+        <div class="ss-img"><img src="<?php echo get_theme_file_uri('/images/ranks.jpg') ?>"></div>
       </div>
     </div>
 
@@ -108,7 +112,7 @@
   </div>
   <!-- ------------------- -->
   
-    <hr style="background-color: black; height: 1px;"/>
+    <hr style="background-color: black; border: none;"/>
 	  <div class="hero-slider">
 	  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/alexander.jpg') ?>);">
 	    <div class="hero-slider__interior container">

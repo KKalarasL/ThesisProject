@@ -1,4 +1,4 @@
-<hr style="background-color: black; height: 1px;"/>
+<hr style="background-color: black; border: none"/>
 <footer class="site-footer">
 
     <div class="site-footer__inner container container--narrow">
