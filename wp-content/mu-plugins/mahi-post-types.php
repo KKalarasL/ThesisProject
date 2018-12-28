@@ -2,10 +2,9 @@
 
 function mahi_post_types() {
   register_post_type('mythology', array(
-    'taxonomies' => array('category', 'post_tag'),
+    'taxonomies' => array('category'),
     'supports' => array('title', 'post_tag', 'editor', 'excerpt'),
     'rewrite' => array('slug' => 'mythology'),
-    // 'has_archive' => true,
     'public' => true,
     'labels' => array(
       'name' => 'Mythology',
@@ -17,10 +16,9 @@ function mahi_post_types() {
     'menu_icon' => 'dashicons-media-text'
   ));
   register_post_type('history', array(
-    'taxonomies' => array('category', 'post_tag'),
+    'taxonomies' => array('category'),
     'supports' => array('title', 'post_tag', 'editor', 'excerpt'),
     'rewrite' => array('slug' => 'history'),
-    // 'has_archive' => true,
     'public' => true,
     'labels' => array(
       'name' => 'History',
@@ -32,10 +30,9 @@ function mahi_post_types() {
     'menu_icon' => 'dashicons-media-spreadsheet'
   ));
   register_post_type('carddb', array(
-    'taxonomies' => array('category', 'post_tag'),
+    'taxonomies' => array('category'),
     'supports' => array('title', 'post_tag', 'editor', 'excerpt'),
     'rewrite' => array('slug' => 'carddb'),
-    // 'has_archive' => true,
     'public' => true,
     'labels' => array(
       'name' => 'CardDB',

@@ -15,17 +15,17 @@
 	        <nav class="main-navigation">
 	        <div class="navbar">
 	          <ul>
-	            <li ><?php if (is_page('home') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url() ?>">Home</a></li>
+	            <li <?php if (is_page('home') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url() ?>">Home</a></li>
 	            <div style="margin-left: 10px" class="dropdown">
-	            	<button class="dropbtn"><li <?php if (get_post_type() == 'mythology') echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url('/mythology') ?>">Mythology <i class="fa fa-caret-down"></i></a></li></button>
+	            	<button class="dropbtn"><li <?php if (get_post_type() == 'mythology' OR is_page('mythology')) echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url('/mythology') ?>">Mythology <i class="fa fa-caret-down"></i></a></li></button>
 	            	<ul class="dropdown-content">
-	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'mythology') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/gods') ?>">Gods</a></li>
+	            		<li style="float: inherit; width: fit-content;" <?php if (wp_get_post_parent_id(0) == 10) echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/gods') ?>">Gods</a></li>
 	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'mythology') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/heroes') ?>">Heroes</a></li>
 	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'mythology') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/mythology/creatures') ?>">Creatures</a></li>
 	            	</ul>
 	            </div>
 	            <div style="margin-left: 10px" class="dropdown">
-	            	<button class="dropbtn"><li <?php if (get_post_type() == 'history') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/history') ?>">History <i class="fa fa-caret-down"></i></a></li></button>
+	            	<button class="dropbtn"><li <?php if (get_post_type() == 'history' OR is_page('history')) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/history') ?>">History <i class="fa fa-caret-down"></i></a></li></button>
 	            	<ul class="dropdown-content">
 	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'history') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/history/battles') ?>">Battles</a></li>
 	            		<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'history') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/history/armies') ?>">Armies</a></li>
@@ -33,13 +33,13 @@
 	            	</ul>
 	            </div>
 	            <div style="margin-left: 10px" class="dropdown">
-	            	<button class="dropbtn"><li <?php if (get_post_type() == 'carddb') echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url('/cardgame') ?>">TCG <i class="fa fa-caret-down"></i></a></li></button>
+	            	<button class="dropbtn"><li <?php if (get_post_type() == 'carddb' OR is_page('cardgame')) echo 'class="current-menu-item"' ?>> <a href="<?php echo site_url('/cardgame') ?>">TCG <i class="fa fa-caret-down"></i></a></li></button>
 	            		<ul class="dropdown-content">
 	            			<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'play') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/carddb/play') ?>">Play</a></li>
 	            			<li style="float: inherit; width: fit-content;" <?php if (get_post_type() == 'library') echo 'class="current-menu-item"' ?>><a style="color: #870000" href="<?php echo site_url('/carddb/library') ?>">Library</a></li>
 	            		</ul>
 	            </div>
-	            <li style="margin-left: 10px" <?php if (get_post_type() == 'contact') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
+	            <li style="margin-left: 10px" <?php if (get_post_type() == 'contact' OR is_page('contact')) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
 	          </ul>
 	         </div>
 	        </nav>
